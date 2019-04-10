@@ -23,3 +23,9 @@
     color: white;   
 }
 
+.correct {
+    background-color: #2Ba745;
+}
+.incorrect {
+    background-color: #dc3545;
+}

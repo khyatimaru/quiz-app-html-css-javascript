@@ -73,9 +73,16 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
-        
-        console.log('selected answer', selectedAnswer);
-        getNewQuestion();
+        const classToApply = 
+            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        console.log('selected answer' + selectedAnswer + 'class to apply is ', classToApply);
+        selectedChoice.parentElement.classList.add(classToApply);
+
+        setTimeout(function() {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+
+        }, 1000);
     });
 });
 
