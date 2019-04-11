@@ -122,3 +122,18 @@ input {
 input::placeholder {
     color: #aaa;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0.2rem;
+    width: 100%;
+    height: 4rem;
+    background-color: #56a5eb;
+    text-align: center;
+    font-size: 2rem;
+}
+.fab     {
+    margin-right: 20px;
+    margin-top: 7px;
+}
